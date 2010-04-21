@@ -51,6 +51,7 @@ module SortableHelper
     end
     params = {:sort => key, 
       :page => nil, # when sorting we start over on page 1
+      :per_page => params[:per_page],
       :q => params[:q]}
     params.merge!(extra_params)
 
